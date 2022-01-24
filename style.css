@@ -283,8 +283,11 @@ main {
         width: 100%;
         margin: 0;
     }
-
     /* ----- header ----- */ 
+
+    header {
+        min-height: 100vh;
+    }
     .nav-bar {
         width: 0;
     }
