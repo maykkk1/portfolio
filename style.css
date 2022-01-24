@@ -16,14 +16,19 @@
     
     
     
-    --cinza: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    --cinza: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+    
 }
 
 header {
     width: 100%;
     height: 100vh;
+    background-color: var(--cinza);
+    position: relative;
     overflow: hidden;
 }
 
@@ -45,7 +50,7 @@ header {
     background-color: var(--cinza);
     width: 700px;
     border-top-left-radius: 100px;
-    height: 10vh;
+    height: 72px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -60,7 +65,7 @@ header {
     text-decoration: none;
     text-shadow: 1px 4px 6px black;
     text-transform: uppercase;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     font-size: 1.5rem;
     transition: 400ms;
     padding: 20px 0 20px 0;
@@ -71,9 +76,19 @@ header {
     padding: 20px 0 20px 0;
     border-bottom: 1px solid var(--red);
 }
+
+#about {
+    text-transform: capitalize;
+}
+
 #projetos {
     background-color: var(--red);
+    font-weight: 500;
+    color: var(--cinza);
+    text-shadow: none;
+    font-size: 1.8rem;
     margin-right: 21%;
+    margin-left: 50px;
     padding: 0.5rem 1rem;
     border-bottom: none;
     border-radius: 2px;
@@ -140,6 +155,7 @@ header {
 
 /*presentation section -----------------*/
 .presentation {
+    object-fit: cover;
     position: absolute;
     top: 50vh;
     left: 10%;
@@ -168,10 +184,103 @@ header {
 .dev-name:hover {
     font-size: 3.1rem;
     text-shadow: none;
+    object-fit: cover;
+}
+
+/*about -----------------*/
+
+main {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about {
+    width: 700px;
+    display: flex;
+    margin: 40px auto 40px auto ;
+    padding: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.555) ;
+    box-shadow: 0px 1px 10px rgba(202, 32, 10, 0.397);
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    transition: ease all 400ms;
+}
+.about h2 {
+    color: white;
+    text-align: center;
+    margin: 0 5rem 0 auto;
+    width: 10rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--red);
+}
+
+.profile-img-and-txt {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 
+.profile-img-wrapper {
+    border-radius: 300px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px  rgba(255, 255, 255, 0.171);
+}
+
+.profile-img-wrapper img {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+}
+.about-txt {
+    width: 50%;
+    float: right;
+    color: white;
+    margin-left: 20px;
+}
+
+.social-links {
+    margin-top:2rem;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.social-links-items {
+    font-size: 3rem;
+    color: var(--red);
+    transition: 600ms;
+}
+
+.social-links-items:hover {
+    font-size: 3rem;
+    color: white;
+} 
+
+
+
+
+
+
+
+
 @media (max-width:750px) {
+
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* ----- header ----- */ 
     .nav-bar {
         width: 0;
     }
@@ -217,6 +326,54 @@ header {
     #btn-mobile {
         display: flex;
     }
+
+    /* ----- about me ----- */ 
+
+    .about {
+        width: 96%;
+        margin: 1rem;
+        padding: 1rem 0 0 0;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.555) ;
+        box-shadow: 0px 1px 10px rgba(202, 32, 10, 0.397);
+    }
+
+    .profile-img-wrapper {
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+    }
+
+    .profile-img-and-txt {
+        flex-direction: column;
+    }
+
+    .social-links {
+        width: 80%;
+        margin: 3rem auto 2rem auto;
+    }
+
+    .about-txt {
+        margin: 2rem 0 0 0;
+        text-align: center;
+        width: 80%;
+    }
+
+    .about h2 {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+
+
+
+
+    
+
+
+
+   
 }
 
 
