@@ -286,7 +286,7 @@ main {
     /* ----- header ----- */ 
 
     header {
-        width: 90vh;
+        height: 90vh;
     }
     .nav-bar {
         width: 0;
