@@ -286,7 +286,7 @@ main {
     /* ----- header ----- */ 
 
     header {
-        min-height: 100vh;
+        min-height: -webkit-fill-available;
     }
     .nav-bar {
         width: 0;
