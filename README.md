@@ -10,7 +10,7 @@ desenvolver Frontend.
 ### Header
 - [x] Nav-bar
 - [x] Banner
-- [x] Resposividade
+- [x] Responsividade
 - [x] Menu Hamburger
 
 
@@ -18,7 +18,7 @@ desenvolver Frontend.
 ### About me
 - [x] Foto
 - [x] Layout
-- [x] Resposividade
+- [x] Responsividade
 - [ ] Conteúdo textual
 - [x] Redes Sociais
 
@@ -29,4 +29,4 @@ desenvolver Frontend.
 ### Footer 
 - [ ] Redes Sociais
 - [ ] Contatos
-- [ ] Resposividade
+- [ ] Responsividade
