@@ -9,6 +9,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 :root {
     --red:#e52d27;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
@@ -331,7 +335,7 @@ main {
 
     .about {
         width: 96%;
-        margin: 1rem;
+        margin: 1rem auto 1rem auto;
         padding: 1rem 0 0 0;
         align-items: center;
         border: 1px solid rgba(0, 0, 0, 0.555) ;
@@ -364,6 +368,7 @@ main {
         margin: 0;
         margin-bottom: 2rem;
     }
+
 
 
 
