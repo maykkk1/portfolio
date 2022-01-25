@@ -282,7 +282,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1423px;
+    width: 1138px;
 }
 
 .projetos h2 {
@@ -305,6 +305,7 @@ main {
     border-radius: 10px;
     width: 100%;
     position: relative;
+    border: 1px solid var(--red);
 }
 
 
@@ -315,8 +316,8 @@ main {
     display: flex;
     box-shadow: 2px 2px 4px black;
     overflow: hidden;
-    width: 960px;
-    height: 600px;
+    width: 796.6px;
+    height: 480px;
     align-items: center;
 }
 .imgs-wrapper {
@@ -325,8 +326,8 @@ main {
     transform: translateX(0);
 }
 .imgs-wrapper img {
-    width: 960px;
-    height: 600px;
+    width: 796.6px;
+    height: 480px;
 }
 .imgs-wrapper a {
     width: 100%;
@@ -336,8 +337,8 @@ main {
 #previous-btn {
     position: absolute;
     top: 50%;
-    left: 7px;
-    font-size: 4.5rem;
+    left: 10px;
+    font-size: 3.5rem;
     color: var(--cinza);
     background-color: transparent;
     border: none;
@@ -349,8 +350,8 @@ main {
 #next-btn {
     position: absolute;
     top: 50%;
-    right: 470px;
-    font-size: 4.5rem;
+    right: 351.4px;;
+    font-size: 3.5rem;
     color: var(--cinza);
     background-color: transparent;
     border: none;
@@ -378,8 +379,8 @@ main {
     box-shadow: 2px 2px 4px black;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
-    height: 600px;
-    width: 463px;
+    height: 480px;
+    width: 341.4px;
     align-items: center;
 } 
 
@@ -393,8 +394,8 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 600px;
-    width: 463px;
+    height: 480px;
+    width: 341.4px;
     color: rgb(0, 0, 0);
     object-fit: cover;
 }
@@ -402,10 +403,9 @@ main {
 
 .descricao-projetos-items h2{
     color: black;
-    margin-top: 3rem;
+    margin-top: 1rem;
     font-size: 2rem;
-    padding-bottom: 1rem;
-    width: 463px;
+    width: 341.4px;
     border: none;
     text-shadow: 1px 1px 10px rgba(19, 5, 5, 0.603);
 
@@ -414,7 +414,7 @@ main {
 
 .descricao-projetos-items p {
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     width: 100%;
 }
 
@@ -422,13 +422,14 @@ main {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    height: 350px;
+    height: 220px;
     display: block;
 }
 
 
 
 .btnAndSkills {
+    margin-top: 2rem;
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -439,7 +440,7 @@ main {
 }
 
 .links-desc-projeto {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .links-desc-projeto a {

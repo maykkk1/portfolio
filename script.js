@@ -24,8 +24,8 @@ function next() {
     if(i > img.length - 1) {
         i = 0;
     }
-    imgs.style.transform = `translateX(${-i * 960}px)`;
-    desc.style.transform = `translateX(${-i * 463}px)`;
+    imgs.style.transform = `translateX(${-i * 796.6}px)`;
+    desc.style.transform = `translateX(${-i * 341.4}px)`;
 }
 
 function previous() {
@@ -33,8 +33,8 @@ function previous() {
     if(i < 0) {
         i = img.length - 1;
     }
-    imgs.style.transform = `translateX(${-i * 960}px)`;
-    desc.style.transform = `translateX(${-i * 463}px)`;
+    imgs.style.transform = `translateX(${-i * 796.6}px)`;
+    desc.style.transform = `translateX(${-i * 341.4}px)`;
 }
 
 
