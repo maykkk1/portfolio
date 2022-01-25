@@ -276,6 +276,7 @@ main {
 
 
 
+
 .projetos {
     margin: 5rem auto 5rem auto;
     display: flex;
@@ -306,8 +307,6 @@ main {
     width: 100%;
     position: relative;
 }
-
-
 
 /* carrossel ---------------*/
 .carrossel {
@@ -378,7 +377,7 @@ main {
     overflow: hidden;
     display: flex;
     box-shadow: 2px 2px 4px black;
-    background-color: rgb(255, 255, 255);
+    background-color: black;
     overflow: hidden;
     height: 480px;
     width: 341.4px;
@@ -397,23 +396,24 @@ main {
     text-align: center;
     height: 480px;
     width: 341.4px;
-    color: rgb(0, 0, 0);
+    color: white;
     object-fit: cover;
 }
 
 
 .descricao-projetos-items h2{
-    color: black;
+    color: white;
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     width: 341.4px;
     border: none;
-    text-shadow: 1px 1px 10px rgba(19, 5, 5, 0.603);
+    text-shadow: 1px 1px 3px rgba(235, 235, 235, 0.603);
 
 }
 
 
 .descricao-projetos-items p {
+    color: rgb(133, 124, 124);
     text-align: left;
     font-size: 0.9rem;
     width: 100%;
