@@ -302,10 +302,9 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 4px;
     width: 100%;
     position: relative;
-    border: 1px solid var(--red);
 }
 
 
@@ -339,12 +338,13 @@ main {
     top: 50%;
     left: 10px;
     font-size: 3.5rem;
-    color: var(--cinza);
+    color: rgb(0, 0, 0);
     background-color: transparent;
     border: none;
     transition: ease all 400ms;
     cursor: pointer;
     z-index: 1000;
+    opacity: 0.5;
 }
 
 #next-btn {
@@ -352,16 +352,17 @@ main {
     top: 50%;
     right: 351.4px;;
     font-size: 3.5rem;
-    color: var(--cinza);
+    color: rgb(0, 0, 0);
     background-color: transparent;
     border: none;
     transition: ease all 400ms;
     cursor: pointer;
     z-index: 1000;
+    opacity: 0.5;
 }
 
 #next-btn:hover, #previous-btn:hover {
-    color: var(--red);
+    opacity: 1;
 }
 
 
