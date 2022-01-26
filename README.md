@@ -25,8 +25,7 @@ desenvolver Frontend.
 - [x] Redes Sociais
 
 ### Projetos 
-- [x] Carousel
-- [ ] Resposividade
+- [x] Resposividade
 
 ### Footer 
 - [ ] Redes Sociais
