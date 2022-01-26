@@ -273,6 +273,7 @@ main {
 
 
 .projetos {
+    min-width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,6 +281,7 @@ main {
     margin-bottom: 50px;
     border-radius: 10px;
     overflow: hidden;
+    transition: ease all 400ms;
 }
 
 .project-header {
@@ -291,6 +293,7 @@ main {
     font-size: 1.5rem;
     width: 100%;
     background-color: rgb(255, 255, 255);
+    transition: ease all 400ms;
 }
 
 .project-header h2 {
@@ -302,6 +305,7 @@ main {
     display: flex;
     width: 10%;
     justify-content: space-around;
+    transition: ease all 400ms;
 }
 
 .ghost-div {
@@ -329,18 +333,22 @@ main {
     width: 100%;
     background-color: #111010;
     padding: 100px 0 100px 0;
+    transition: ease all 400ms;
 }
 
 .projetos-item {
     width: 30%;
     display: flex;
     flex-direction: column;
+    transition: ease all 400ms;
 }
 
 .projetos-item h3 {
     color: white;
     font-size: 1.5rem;
+    font-weight: 400;
     margin-bottom: 2rem;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .projetos-item img {
@@ -382,6 +390,10 @@ main {
 .skills p {
     margin-left: 6px;
     font-size: 1.3rem;
+    background-color: var(--red);
+    padding: 4px;
+    border-radius: 3px;
+
 }
 
 
@@ -393,7 +405,7 @@ main {
 
 
 
-@media (max-width:750px) {
+@media (max-width:770px) {
 
     main {
         width: 100%;
@@ -491,6 +503,10 @@ main {
 
     /* projects */
 
+    .projetos {
+        min-width: 350px;
+    }
+
     .projetos-wrapper {
         flex-direction: column;
         justify-content: center;
@@ -507,8 +523,6 @@ main {
     .balls-wrapper {
         visibility: hidden;
     }
-
-
 
 
 }
