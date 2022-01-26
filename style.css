@@ -89,7 +89,7 @@ header {
 #projetos {
     background-color: var(--red);
     font-weight: 500;
-    color: var(--cinza);
+    color: white;
     text-shadow: none;
     font-size: 1.8rem;
     margin-right: 21%;
@@ -272,8 +272,12 @@ main {
 } 
 
 
+
+
+/*projetos -----------------*/
 .projetos {
     min-width: 700px;
+    height: 760px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -283,7 +287,6 @@ main {
     overflow: hidden;
     transition: ease all 400ms;
 }
-
 .project-header {
     display: flex;
     flex-direction: row;
@@ -295,36 +298,29 @@ main {
     background-color: rgb(255, 255, 255);
     transition: ease all 400ms;
 }
-
 .project-header h2 {
     font-size: 1rem;
     font-family: 'Ubuntu', sans-serif;
 }
-
 .balls-wrapper {
     display: flex;
     width: 10%;
     justify-content: space-around;
-    transition: ease all 400ms;
+    transition: ease all 100ms;
 }
-
 .ghost-div {
     width: 10%;
     visibility: hidden;
 }
-
 #project-header-circle-1 {
     color: var(--red);
 }
-
 #project-header-circle-2 {
     color: var(--red);
 }
-
 #project-header-circle-3 {
     color: var(--red);
 }
-
 .projetos-wrapper {
     display: flex;
     justify-content: space-around;
@@ -335,14 +331,12 @@ main {
     padding: 100px 0 100px 0;
     transition: ease all 400ms;
 }
-
 .projetos-item {
     width: 30%;
     display: flex;
     flex-direction: column;
     transition: ease all 400ms;
 }
-
 .projetos-item h3 {
     color: white;
     font-size: 1.5rem;
@@ -350,7 +344,6 @@ main {
     margin-bottom: 2rem;
     font-family: 'Ubuntu', sans-serif;
 }
-
 .projetos-item img {
     width: 100%;
 } 
@@ -365,39 +358,101 @@ main {
     align-items: center;
     padding:0 5px 0 5px;
 }
-
 .skills {
     display: flex;
     flex-direction: row;
     text-transform: uppercase;
     text-shadow: 1px 1px 3px black;
 }
-
 .skills i {
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
     color: white;
 } 
-
 .links a {
     color: white;
     transition: 400ms;
 }
-
 .links a:hover {
     color: var(--red);
 }
-
 .skills p {
     margin-left: 6px;
     font-size: 1.3rem;
     background-color: var(--red);
     padding: 4px;
     border-radius: 3px;
-
 }
 
 
 
+
+footer {
+    margin-top: 5rem;
+    width: 100%;
+    border-top: .1px solid white;
+    height: 250px;
+    background: black;
+    color: white;
+}
+
+footer p {
+    font-size: .9rem;
+    color: rgba(167, 154, 154, 0.651);
+    width: 350px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.Friedrich {
+    margin-top: 0.9rem;
+    width: 350px;
+    text-align: right;
+    font-style: normal;
+}
+
+footer hr {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: rgba(255, 68, 0, 0.384);
+    height: 0.5px;
+}
+
+.footer-social-links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.footer-social-links-items {
+    display: flex;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 2rem 1rem 2rem 1rem;
+    transition: 400ms;
+}
+
+.footer-social-links-items:hover {
+    color: var(--red);
+}
+
+.copyright {
+    padding: none;
+    margin-top: 1.8rem;
+    font-style: normal;
+}
+
+.copyright a {
+    color: white;
+    text-decoration: none;
+}
 
 
 
@@ -501,10 +556,13 @@ main {
     }
 
 
-    /* projects */
+
+
+    /*projetos -----------------*/
 
     .projetos {
         min-width: 350px;
+        height: max-content;
     }
 
     .projetos-wrapper {
