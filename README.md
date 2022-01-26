@@ -21,13 +21,12 @@ desenvolver Frontend.
 - [x] Foto
 - [x] Layout
 - [x] Responsividade
-- [ ] Conteúdo textual
+- [x] Conteúdo textual
 - [x] Redes Sociais
 
 ### Projetos 
 - [x] Resposividade
 
 ### Footer 
-- [ ] Redes Sociais
-- [ ] Contatos
-- [ ] Responsividade
+- [x] Redes Sociais
+- [x] Responsividade
