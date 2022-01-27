@@ -18,23 +18,27 @@ html {
     --red:#e52d27;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    
+     
     
     --cinza: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    
-    
 }
 
 header {
     width: 100%;
     height: 100vh;
+    min-height: 620px;
     background-color: var(--cinza);
     position: relative;
     overflow: hidden;
+}
+
+main {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 350px;
 }
 
 /* banner section -----------------*/
@@ -46,11 +50,10 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 /* nav-bar section -----------------*/
-
 .nav-bar {
     background-color: var(--cinza);
     width: 700px;
@@ -63,7 +66,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    transition: ease all 400ms;
+    transition: 200ms;
 }
 .nav-items {
     color: white;
@@ -72,7 +75,7 @@ header {
     text-transform: uppercase;
     margin-left: 1.5rem;
     font-size: 1.5rem;
-    transition: 400ms;
+    transition: 200ms;
     padding: 20px 0 20px 0;
     border-bottom: 1px solid transparent;
 }
@@ -92,6 +95,7 @@ header {
     color: white;
     text-shadow: none;
     font-size: 1.8rem;
+    font-weight: 400;
     margin-right: 21%;
     margin-left: 50px;
     padding: 0.5rem 1rem;
@@ -105,8 +109,8 @@ header {
     border-bottom: none;
     box-shadow: none;
     text-shadow: none;
+    opacity: .8;
 }
-
 #btn-mobile {
     display: none;
     position: absolute;
@@ -120,7 +124,6 @@ header {
     transition: ease all 800ms;
     cursor: pointer;
 }
-
 #hamburger {
     border-top: 2px solid var(--red);
     color: var(--red);
@@ -135,14 +138,14 @@ header {
     height: 2px;
     background-color: currentColor;
 }
-
-
 .btn-active {
     border-radius: 60px;
 }
 
-/* nav-bar mobile */
 
+
+
+/* nav-bar mobile */
 .nav-items-mobile {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -151,11 +154,12 @@ header {
     text-shadow: 1px 4px 6px black;
     transition: ease all 500ms;
 }
-
 .nav-items-mobile:hover {
     padding: 1rem 0;
     border-bottom: 1px solid var(--red);
 }
+
+
 
 
 /*presentation section -----------------*/
@@ -192,14 +196,10 @@ header {
     object-fit: cover;
 }
 
+
+
+
 /*about -----------------*/
-
-main {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .about {
     width: 700px;
     display: flex;
@@ -222,15 +222,12 @@ main {
     margin-bottom: 2rem;
     border-bottom: 1px solid var(--red);
 }
-
 .profile-img-and-txt {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
-
 .profile-img-wrapper {
     border-radius: 300px;
     width: 300px;
@@ -238,7 +235,6 @@ main {
     overflow: hidden;
     box-shadow: 1px 1px 10px  rgba(255, 255, 255, 0.171);
 }
-
 .profile-img-wrapper img {
     object-fit: cover;
     object-position: top;
@@ -251,7 +247,6 @@ main {
     color: white;
     margin-left: 20px;
 }
-
 .social-links {
     margin-top:2rem;
     width: 200px;
@@ -259,13 +254,11 @@ main {
     justify-content: space-between;
     margin-left: auto;
 }
-
 .social-links-items {
     font-size: 3rem;
     color: var(--red);
     transition: 600ms;
 }
-
 .social-links-items:hover {
     font-size: 3rem;
     color: white;
@@ -350,6 +343,7 @@ main {
 }
 .projetos-item img {
     width: 100%;
+    max-height: 170px;
 } 
 
 .projects-footer {
@@ -464,6 +458,8 @@ footer hr {
 
 
 
+
+
 @media (max-width:770px) {
 
     main {
@@ -487,6 +483,7 @@ footer hr {
         position: absolute;
         width: 100%;
         height: 50vh;
+        min-height: 315px;
         border-top-left-radius: 400px;
         background-color: var(--cinza);
         bottom: 0;
@@ -585,7 +582,6 @@ footer hr {
     .balls-wrapper {
         visibility: hidden;
     }
-
 
 }
 
