@@ -379,6 +379,7 @@ main {
     background-color: var(--red);
     padding: 4px;
     border-radius: 3px;
+    color: rgba(250, 226, 226, 0.829);
 }
 
 
