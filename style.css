@@ -376,11 +376,11 @@ main {
 .skills p {
     margin-left: 6px;
     font-size: 1.3rem;
-    background-color: var(--red);
+    background-color: rgba(255, 30, 0, 0.76);
     padding: 4px;
     border-radius: 3px;
     color: rgb(255, 255, 255);
-    text-shadow: black 2.5px 2.5px 3px;
+    text-shadow: black 2px 2px 3px;
 }
 
 
