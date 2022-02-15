@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased !important;
+}
+
+:root {
+    --primary-font: 'Staatliches', cursive;
+    --secondary-font: Tomorrow, sans-serif;
+
+
+    --color-1: #de004e;
+    --color-2: #05d9e8;
+    --color-3: #ffd300 ;
+    --color-4: #d1f7ff;
+    --color-5: #005678;
+    --color-6: #01012b;
+}
+
+body {
+    overflow: hidden;
+}
+
+
+header{
+    overflow: hidden;
+    font-family: var(--primary-font);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+
+.presentation {
+    width: 1155px;
+    padding: 100px 0 100px 0;
+    background-color: #05d9e80c;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 2px solid var(--color-1);
+    border-right: 2px solid var(--color-1);
+}
+
+.my-name{
+    font-size: 5rem;
+    color: var(--color-4);
+    text-shadow:1px 1px 3px var(--color-6);
+}
+.main-role {
+    font-family: var(--secondary-font);
+    font-size: 6rem;
+    color: var(--color-1);
+    text-shadow:1px 1px 2px var(--color-2);
+}
+
+.saiba-mais {
+    font-family: var(--secondary-font);
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: var(--color-6);
+    padding: .5rem 1rem;
+    font-size: 2rem;
+    border: none;
+    margin-top: 2.5rem;
+    background-color: var(--color-2);
+    cursor: pointer;
+    clip-path: polygon(0 16%, 5% 0, 100% 0%, 100% 84%, 95% 100%, 0% 100%);
+    transition: 400ms;
+}
+.saiba-mais:hover {
+    background-color: #05d9e89d;
+}
+
+
+/*-----NAVBAR-----*/
+.nav-bar {
+    font-family: var(--secondary-font);
+    font-weight: bolder;
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 80px;
+    background-color: var(--color-1);
+    clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+}
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+}
+.nav-bar li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color-4);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 7px var(--color-6);
+}
+
+
+/*-----NAVBAR-MOBILE-----*/
+.nav-bar-mobile {
+    font-family: var(--secondary-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-2);
+    position: absolute;
+    right: -100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    transition: ease-in-out 400ms;
+}
+
+.nav-bar-mobile ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+    width: 98%;
+    height: 99%;
+    border: 2px solid var(--color-1);
+    box-shadow: 2px 2px 30px var(--color-1);
+    border-radius: 3px;
+}
+
+.nav-bar-mobile li{
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.nav-bar-mobile a {
+    color: var(--color-6);
+    text-shadow: 1px 1px 2px var(--color-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-hamburguer {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    z-index: 100;
+    top: 35px;
+    right: 35px;
+    cursor: pointer;
+}
+
+
+@media (max-width:1155px) {
+    .presentation {
+        width: 100%;
+        text-align: center;
+        bottom: 0;
+    }
+}
+
+
+@media (max-width:500px) {
+    .presentation {
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .main-role {
+        font-size: 4.5rem;
+    }
+
+    .my-name {
+        font-size: 4rem;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+}
+
+
+
+
+
